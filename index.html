@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Service - Desktop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="images/logo-proservice.svg" alt="Logo Pro Service">
+        <div>
+          <h1>Pro Service</h1>
+          <p>Painel principal</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Oportunidades</a>
+        <a href="#">Serviços</a>
+        <a href="#">Solicitações</a>
+        <a href="#">Notificações</a>
+        <a href="#">Perfil</a>
+        <a href="#">Configurações</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <h3>Perfil completo</h3>
+        <strong>100%</strong>
+        <p>Seu perfil está pronto para receber novos serviços.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <span class="welcome">Olá, Marcos</span>
+          <h2>Encontre e gerencie serviços com mais facilidade</h2>
+        </div>
+        <div class="topbar-right">
+          <input type="text" placeholder="Buscar serviços, profissionais ou solicitações">
+          <img src="images/avatar-client.svg" alt="Usuário" class="avatar">
+        </div>
+      </header>
+
+      <section class="hero-grid">
+        <article class="hero-card primary">
+          <div>
+            <span class="tag">Frontend desktop</span>
+            <h3>Layout inspirado no seu Figma, agora em versão para computador</h3>
+            <p>Estrutura em HTML e CSS com menu lateral, cards, tabelas e áreas de gestão visualmente mais próximas de um sistema web real.</p>
+            <div class="hero-actions">
+              <a href="#" class="btn white">Ver oportunidades</a>
+              <a href="#" class="btn ghost">Novo serviço</a>
+            </div>
+          </div>
+          <img src="images/logo-proservice.svg" alt="Logo" class="hero-logo">
+        </article>
+
+        <article class="hero-card light">
+          <h3>Resumo rápido</h3>
+          <div class="mini-stats">
+            <div><strong>24</strong><span>Serviços ativos</span></div>
+            <div><strong>08</strong><span>Novas solicitações</span></div>
+            <div><strong>12</strong><span>Notificações</span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <h4>Oportunidades</h4>
+          <strong>18</strong>
+          <p>Novas demandas disponíveis hoje.</p>
+        </article>
+        <article class="stat-card">
+          <h4>Serviços em andamento</h4>
+          <strong>07</strong>
+          <p>Acompanhamento em tempo real.</p>
+        </article>
+        <article class="stat-card">
+          <h4>Pedidos concluídos</h4>
+          <strong>32</strong>
+          <p>Histórico dos serviços finalizados.</p>
+        </article>
+        <article class="stat-card">
+          <h4>Avaliação média</h4>
+          <strong>4,9</strong>
+          <p>Confiança construída com os clientes.</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel wide">
+          <div class="panel-header">
+            <div>
+              <h3>Oportunidades recentes</h3>
+              <p>Demandas que combinam com seu perfil profissional.</p>
+            </div>
+            <button class="btn blue">Filtrar</button>
+          </div>
+
+          <div class="table">
+            <div class="table-row table-head">
+              <span>Serviço</span>
+              <span>Categoria</span>
+              <span>Local</span>
+              <span>Valor</span>
+              <span>Status</span>
+            </div>
+            <div class="table-row">
+              <span>Montagem de painel</span>
+              <span>Elétrica</span>
+              <span>Centro</span>
+              <span>R$ 180</span>
+              <span class="badge success">Novo</span>
+            </div>
+            <div class="table-row">
+              <span>Reparo hidráulico</span>
+              <span>Hidráulica</span>
+              <span>Bairro Norte</span>
+              <span>R$ 250</span>
+              <span class="badge warning">Hoje</span>
+            </div>
+            <div class="table-row">
+              <span>Pintura residencial</span>
+              <span>Pintura</span>
+              <span>Jardim Goiás</span>
+              <span>R$ 600</span>
+              <span class="badge success">Novo</span>
+            </div>
+            <div class="table-row">
+              <span>Instalação de tomadas</span>
+              <span>Elétrica</span>
+              <span>Setor Sul</span>
+              <span>R$ 140</span>
+              <span class="badge neutral">Análise</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Notificações</h3>
+              <p>Atualizações importantes do sistema.</p>
+            </div>
+          </div>
+          <div class="notification-list">
+            <div class="notification-item">
+              <strong>Serviço finalizado</strong>
+              <span>Seu atendimento foi marcado como concluído.</span>
+            </div>
+            <div class="notification-item">
+              <strong>Novo orçamento</strong>
+              <span>Um cliente enviou uma nova solicitação.</span>
+            </div>
+            <div class="notification-item">
+              <strong>Perfil visualizado</strong>
+              <span>Seu perfil teve novas visitas hoje.</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Perfil profissional</h3>
+              <p>Informações principais do profissional.</p>
+            </div>
+          </div>
+          <div class="profile-card">
+            <img src="images/avatar-pro.svg" alt="Profissional" class="avatar large">
+            <h4>Marcos Silva</h4>
+            <p>Eletricista e técnico em manutenção residencial</p>
+            <div class="chips">
+              <span>R$ 80/hora</span>
+              <span>4,9 avaliações</span>
+              <span>Atendimento local</span>
+            </div>
+            <a href="#" class="btn blue full">Ver perfil</a>
+          </div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-header">
+            <div>
+              <h3>Meus serviços</h3>
+              <p>Gestão dos serviços aceitos e acompanhamentos.</p>
+            </div>
+            <button class="btn orange">Novo anúncio</button>
+          </div>
+
+          <div class="service-cards">
+            <div class="service-card">
+              <h4>Eva Júlia</h4>
+              <p>Manutenção elétrica residencial</p>
+              <span class="badge success">Ativo</span>
+            </div>
+            <div class="service-card">
+              <h4>Sophia Barroso</h4>
+              <p>Instalação e reparos</p>
+              <span class="badge warning">Pendente</span>
+            </div>
+            <div class="service-card">
+              <h4>Luiz Gustavo</h4>
+              <p>Pintura interna</p>
+              <span class="badge success">Ativo</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
