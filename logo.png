@@ -1,0 +1,37 @@
+import { Link, useParams } from 'react-router-dom';
+import MobileShell from '../components/MobileShell';
+import { providers } from '../data/mockData';
+
+export default function ProviderProfilePage() {
+  const { id } = useParams();
+  const provider = providers.find((item) => String(item.id) === id) || providers[0];
+
+  return (
+    <MobileShell>
+      <section className="content-scroll profile-page">
+        <header className="top-header">
+          <Link to="/home" className="back-link">←</Link>
+          <h2>Perfil do prestador</h2>
+        </header>
+        <section className="profile-card hero-profile">
+          <img className="avatar large-avatar photo-avatar" src={provider.photo} alt={provider.name} />
+          <h3>{provider.name}</h3>
+          <p>{provider.category}</p>
+          <span>{provider.city} · {provider.distance}</span>
+          <div className="profile-metrics">
+            <div><strong>{provider.rating} ★</strong><small>Avaliação</small></div>
+            <div><strong>{provider.jobs}</strong><small>Serviços feitos</small></div>
+            <div><strong>R$ {provider.price.toFixed(0)}</strong><small>Preço médio</small></div>
+          </div>
+        </section>
+        <section className="section-block top-spacing"><h3>Sobre o serviço</h3><p>{provider.description}</p></section>
+        <section className="section-block top-spacing">
+          <h3>Especialidades</h3>
+          <div className="tag-row">{provider.skills.map((skill) => <span key={skill} className="tag active-tag">{skill}</span>)}</div>
+        </section>
+        <section className="section-block review-card"><strong>Comentário recente</strong><p>Serviço pontual, atendimento educado e acabamento muito bem feito. Recomendo.</p></section>
+        <button className="primary-button top-spacing">Solicitar orçamento</button>
+      </section>
+    </MobileShell>
+  );
+}

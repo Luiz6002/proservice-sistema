@@ -1,0 +1,40 @@
+import MobileShell from '../components/MobileShell';
+import BottomNav from '../components/BottomNav';
+import { myServices } from '../data/mockData';
+
+export default function ServicesPage() {
+  return (
+    <MobileShell>
+      <section className="content-scroll with-bottom-nav services-layout">
+        <header className="simple-header">
+          <div>
+            <small>Acompanhamento</small>
+            <h2>Meus serviços</h2>
+          </div>
+        </header>
+        <div className="summary-card">
+          <strong>3 solicitações ativas</strong>
+          <span>Acompanhe orçamentos, agendamentos e serviços em andamento.</span>
+        </div>
+        <div className="list-stack top-spacing">
+          {myServices.map((service) => (
+            <article className="service-card" key={service.id}>
+              <div className="service-icon">✓</div>
+              <div className="provider-info">
+                <strong>{service.title}</strong>
+                <span>{service.username}</span>
+                <small>{service.date}</small>
+              </div>
+              <div className="service-side">
+                <span>{service.status}</span>
+                <strong>R$ {service.price.toFixed(2)}</strong>
+              </div>
+            </article>
+          ))}
+        </div>
+        <button className="floating-button">+ Solicitar novo serviço</button>
+      </section>
+      <BottomNav />
+    </MobileShell>
+  );
+}
